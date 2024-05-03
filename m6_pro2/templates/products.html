@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+</head>
+<body>
+    <h1>Products</h1><br>
+
+    {% for product in products %}
+    Model: <a href = "{% url 'detail' product.pk %}">{{product.model}}</a><hr>
+    {% endfor %}
+
+</body>
+</html>
